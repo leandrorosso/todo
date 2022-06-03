@@ -18,9 +18,9 @@ class Task < ApplicationRecord
 
   def symbol 
     case status
-    when 'pending' then '>>'
-    when 'done' then 'V'
-    when 'expired' then 'x'  
+    when 'pending' then '»'
+    when 'done'    then '✓'
+    when 'expired' then '✕'
     end
   end
 
